@@ -1,0 +1,77 @@
+/*
+float 
+position
+media-queries
+z-index
+::before ::after pseudo elements
+ */
+
+/* position:static - default, always positioned according to normal flow*/
+/* position:relative - position relative to its normal position. top, bottom, left, right */
+div {
+  border: 3px solid red;
+  background: rgb(241, 241, 241);
+  margin-top: 40px;
+}
+
+.one {
+  background: gold;
+  /* the difference is that you can use top,bottom, left, right. NOT PLACING ANY OTHER ELEMENTS IN ITS PLACE*/
+  /* position: relative; */
+  /* top: 200px; */
+  /* bottom: 2rem; */
+  /* 2 rems up from its relative/normal position */
+  /* right: 20px; */
+  /* left: 50px; */
+}
+
+.two {
+  background: hotpink;
+
+  position: relative;
+}
+
+/* position:absolute - relative to the parent with position:relative 
+position:relative rleative to viewport(screen), stays as we are scrolling will use other content to fill out the space
+*/
+
+.special {
+  background: lightsalmon;
+  font-size: 20px;
+
+  /* special has parent p and ancestor div. 
+  
+  body>div>p.two
+
+  if none of  div or p.two has position:relative, body is the closest with position:relative
+  */
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  background: lightseagreen;
+  color: aliceblue;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  position: fixed;
+  margin-top: 0;
+  top: 0;
+  /* left: 0; */
+  width: 100%;
+}
+
+.container {
+  background: dodgerblue;
+  height: 900px;
+}
+
+/* position:sticky toggles between relative and fixed once the position is met in the viewport- then it sticks
+
+one of the values top. left, bottom, right*/
+
+.nav {
+  position: fixed;
+}

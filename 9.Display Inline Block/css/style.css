@@ -1,0 +1,139 @@
+/* ELEMENTS HAVE IT SET BY DEFAULT */
+/* BLOCK : Always starts a new line and spans full width */
+/* INLINE : Does not start a new line and spans only content */
+
+/* block new lines */
+.block {
+  background: blueviolet;
+  color: burlywood;
+  width: 300px;
+  margin: 4rem auto;
+  /* display: block;
+  display: inline; */
+}
+/* inline takes space */
+.inline {
+  background: cadetblue;
+  color: cornsilk;
+  /* display: inline;
+  display: block; */
+  margin-left: 90px;
+}
+
+/* center inline elements, parent*/
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  text-align: right;
+  text-align: left;
+}
+
+/* BLOCK : browser respects width/height, top/bottom margin */
+/* INLINE : browser doesn not respect width/height,top/bottom margin */
+/* 
+div {
+  background: saddlebrown;
+  color: seashell;
+  width: 300px;
+  height: 200px;
+  margin-top: 20px;
+  margin-bottom: 200px;
+} */
+
+/* descendant selector */
+.navbar li {
+  list-style-type: lower-greek;
+  list-style-type: lower-latin;
+  list-style-type: lower-roman;
+  list-style: none;
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.navbar li a {
+  color: cornflowerblue;
+  text-decoration: none;
+  letter-spacing: 2px;
+  background: bisque;
+  display: block;
+  padding: 5px;
+
+  /* The padding and margin is ignored when displayes is inline */
+}
+
+/* border-box */
+.box1,
+.box2,
+.box3 {
+  width: 200px;
+  height: 200px;
+  color: antiquewhite;
+  font-size: 1.5rem;
+}
+.box1 {
+  background-color: cornflowerblue;
+  padding: 20px;
+  /* adding padding adds 20px more */
+  box-sizing: border-box;
+  /* element kept 200px width and height */
+  /* padding is subtracted */
+  /* That's why in Universal selector(*) box-sizing border-box:border-box */
+}
+.box2 {
+  background-color: slateblue;
+}
+.box3 {
+  background-color: plum;
+  padding: 20px;
+}
+
+/* display inline-block */
+.inlineblock {
+  font-size: 1.5rem;
+  background: darkcyan;
+  width: 40px;
+  height: 40px;
+  margin: 10px 10px;
+  /* of course only left and right margin will work and is respected */
+  display: block;
+  /* display block is used, but it creates a new line */
+  display: inline-block;
+  /* it doesn't start a new line, and browser respects */
+}
+
+/* display:none remove the flow, hide the element, collapse the space */
+
+/* opacity:0, visbility:hidden- hides elements and preserves the space */
+
+div {
+  background: lightcoral;
+  margin: 10px;
+  color: wheat;
+  font-size: 1.3rem;
+}
+.none {
+  display: none;
+  /* it's gone */
+}
+
+.opacity-1 {
+  opacity: 1;
+}
+.opacity-5 {
+  opacity: 0.5;
+}
+.opacity-0 {
+  opacity: 0;
+}
+.visibility {
+  visibility: visible;
+  visibility: hidden;
+}
+
+/* display:none - remove the element from the flow, floats somewhere I guess?*/
+
+/* opacity, visibility, it's still there */

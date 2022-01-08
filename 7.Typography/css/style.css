@@ -1,0 +1,61 @@
+/* font-size */
+/* font-family - describes the font of the element */
+/* Google fonts */
+/* multiple fonts, load time suffers */
+
+/* font-weight - how thick or thin characters in text should be */
+/* font-style sets front style for a text */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* text-align, text indent */
+  text-align: right;
+  line-height: 30px;
+  /* line-height distance betwee the lines */
+  /* if just number number * font size */
+}
+.main-heading {
+  font-family: 'Redacted Script', cursive;
+}
+.one {
+  font-family: 'Redacted Script', cursive;
+  font-weight: 400;
+  text-align: center;
+}
+
+.two {
+  font-weight: lighter;
+  text-align: left;
+  text-indent: 50px;
+}
+
+.sub-heading {
+  font-style: italic;
+  font-style: oblique;
+  font-style: normal;
+}
+/* line height- if number * font-size */
+/* letter - spacing */
+/* text-transform */
+/* text-decoration */
+.line {
+  /* text-decoration: line-through; */
+  /* line-height: 1.5; */
+  text-transform: capitalize;
+}
+.tone {
+  letter-spacing: 5px;
+  line-height: 2.5;
+  text-decoration: overline;
+  text-transform: capitalize;
+}
+.ttwo {
+  word-spacing: 5px;
+}
+
+a {
+  font-size: 3rem;
+  text-decoration: none;
+}

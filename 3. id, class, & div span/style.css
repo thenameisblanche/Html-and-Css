@@ -1,0 +1,41 @@
+/* css rule */
+/* selector == select element */
+/* {} == declaration block */
+/* line == declaration */
+/* property : value; */
+
+/* ID SELECTOR */
+#title {
+  color: darkgoldenrod;
+}
+#subheading {
+  color: olivedrab;
+}
+/* CSS SELECTOR */
+.blue {
+  color: cornflowerblue;
+}
+.salm {
+  color: salmon;
+}
+/* DIV and SPAN - used for grouping*/
+/* DIV- used to group multiple elements */
+/* SPAN- used to group in-line elements */
+
+div {
+  color: whitesmoke;
+  background: chocolate;
+}
+
+.blue {
+  color: aliceblue;
+  background: cornflowerblue;
+}
+
+span {
+  text-transform: uppercase;
+}
+.text {
+  color: black;
+  background: blanchedalmond;
+}

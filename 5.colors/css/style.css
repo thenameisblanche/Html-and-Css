@@ -1,0 +1,46 @@
+/* COLOR PROPERTIES */
+/* COLOR BACKGROUND- */
+
+#first {
+  color: rgba(255, 0, 255, 1);
+  background-color: rgba(0, 0, 0, 0);
+}
+#second {
+  color: rgba(255, 0, 255, 0.75);
+  background: royalblue;
+  /* background can either be image or color */
+}
+
+/* color names >140 */
+/* RGB - RED GREEN BLUE 0-255 */
+
+#first {
+  color: rgba(255, 0, 255, 1);
+  /* overrrides top*/
+}
+#three {
+  color: rgb(100, 20, 35);
+  background: rgb(220, 220, 200);
+}
+
+body {
+  background: rgb(100, 200, 120);
+}
+
+/* RGVA A-opacity/transparency 0-1 */
+#four {
+  color: rgba(100, 20, 255, 0.5);
+  background: rgba(0, 0, 0, 1);
+  /* 0 is transparent */
+}
+
+/* HSL */
+/* HEX Values #RRGGBB */
+/* 123456789 A(10) B(11) C(12) D(13) E(14) F(15) */
+/* #FF0000 Red */
+/* #0000FF Blue */
+
+#fifth {
+  color: #f234ad;
+  background: #000;
+}

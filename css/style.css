@@ -1,0 +1,54 @@
+/* 
+Transition 0 = 100%
+from start to end state
+Animation 0 1% 2% .... 100%
+multiple states
+*/
+
+/* Animation fill mode */
+div {
+  width: 200px;
+  height: 100px;
+  color: aliceblue;
+  margin: 10px;
+}
+
+.transition {
+  background: dodgerblue;
+  transition: all 2s linear;
+}
+
+.transition:hover {
+  background: firebrick;
+  transform: translateX(100px);
+}
+
+.animation {
+  background: firebrick;
+  /* animation: animationname 1s ease-in forwards; */
+}
+
+.animation:hover {
+  animation: animationname 1s ease-in forwards infinite alternate 1s;
+  /* animation-play-state: running; */
+  /* animation-play-state: paused; */
+}
+
+@keyframes animationname {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateY(100%);
+    background: forestgreen;
+  }
+  66% {
+    transform: translateY(100%), translateX(100%);
+    background: fuchsia;
+    transform: scale(75%);
+  }
+  100% {
+    transform: translateX(100%);
+    transform: scale(50%);
+  }
+}

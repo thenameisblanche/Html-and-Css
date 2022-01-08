@@ -1,0 +1,28 @@
+div {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+}
+/* Linear gradients : to bottom, to top,  to left */
+.one {
+  background: linear-gradient(dodgerblue, cornflowerblue);
+}
+.two {
+  background: linear-gradient(red, orange, yellow, green, blue, violet);
+}
+
+.three {
+  background: linear-gradient(315deg, dodgerblue, blueviolet);
+}
+
+.four {
+  background: linear-gradient(to top right, dodgerblue, aliceblue);
+}
+
+.five {
+  background: linear-gradient(dodgerblue 20%, blue);
+}
+
+.six {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+}

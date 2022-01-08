@@ -1,0 +1,98 @@
+/* UNITS */
+/* PIXELS- absolute values, one dot of the screen */
+/* FONT-SIZE-  size of the font */
+/* WIDTH - width of an element */
+/* HEIGHT - height of an element */
+
+/* h1 {
+  font-size: 10px;
+  background: royalblue;
+  color: whitesmoke;
+  width: 200px;
+  height: 400px;
+} */
+/* % percent units are relative units/value and depends on parents */
+.outer {
+  width: 300px;
+  height: 300px;
+  background: crimson;
+}
+/* class inner is dependent on the parent class outer using %  n*/
+.inner {
+  width: 50%;
+  height: 100%;
+  background: cornflowerblue;
+}
+
+/* em is relative and is dependent on parent */
+/* 1em - 16px default browser style */
+/* 1em base value(16px) * number(1) = 16px */
+/* 2em base value(16px) * number(2) = 32px */
+/* 2em base value(10px) * number(2) = 20px */
+/* browser base value, font size */
+/* base value is controlled by parent */
+html {
+  font-size: 10px;
+}
+div {
+  font-size: 10px;
+}
+.absolute {
+  font-size: 32px;
+}
+.relative {
+  font-size: 2rem;
+}
+
+/* rem, relative, depends on the root */
+/* 1rem base value(16px) * number(1) */
+/* is gonna change when browser changes(Size), and stylesheet(HTML) */
+
+/* VIEWPORT UNITS */
+/* vh -  height- percent of the screen */
+/* vw -  width- percent of the screen */
+/* relative to the screen */
+
+.hero {
+  background: dodgerblue;
+  height: 100vh;
+  width: 100vw;
+}
+.about {
+  background: ghostwhite;
+  height: 30vh;
+  width: 30vw;
+}
+/* Default Browser Styles */
+/* Google Chrome Dev Tools */
+
+/* CALC */
+/* Perform Math Operations */
+/* MIx and Match Values */
+* {
+  margin: 0;
+}
+.navbar {
+  background: gray;
+  height: 6rem;
+  color: green;
+  font-size: 3em;
+}
+.banner {
+  background: greenyellow;
+  /* height: calc(30vh - 6rem);*/
+  /* height is fixed */
+  min-height: calc(30vh - 6rem);
+  /* min-height, if content is lesser, remain, if more, keep adding */
+  max-height: 70vh;
+  overflow: scroll;
+}
+
+/* height:auto; min-height;max-height;overflow*/
+.example {
+  background-color: hotpink;
+  width: 20rem;
+  height: 15rem;
+  /* overflow: hidden; any excess is hidden */
+  /* overflow: scroll; a scroll will happen */
+}

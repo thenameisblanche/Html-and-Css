@@ -1,0 +1,63 @@
+/*
+float 
+position
+media-queries
+z-index
+::before ::after pseudo elements
+ */
+
+/* Media Queries 
+Responsive Design
+Style Elements on Differernt Screen Sizes
+min-width : ---starting from
+max-width: ---up to
+Mobile First
+*/
+
+body {
+  background: dodgerblue;
+}
+.banner {
+  background: lightskyblue;
+}
+h1 {
+  color: aliceblue;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+/* When you pass by this certain width */
+/* from 800px up to any size this will apply */
+@media screen and (min-width: 800px) {
+  body {
+    background: aqua;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .banner {
+    background: brown;
+  }
+
+  h1 {
+    color: chartreuse;
+  }
+}
+
+/* width max-width */
+/* from 0 to max-witdh this will apply */
+
+@media screen and (max-width: 300px) {
+  body {
+    background: firebrick;
+  }
+
+  .banner {
+    background: greenyellow;
+  }
+
+  h1 {
+    color: indianred;
+  }
+}

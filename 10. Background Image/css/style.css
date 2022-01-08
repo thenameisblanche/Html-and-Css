@@ -1,0 +1,77 @@
+/* Background Images */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div {
+  min-height: 100vh;
+  color: whitesmoke;
+  border: 2px solid brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.big-img {
+  background: linear-gradient(rgba(61, 158, 255, 0.7), rgba(255, 255, 255, 0.3)),
+    url('../images/mushishi2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Background repeat */
+.small-img {
+  background: url('../images/mushishi1.jpg');
+  background-repeat: repeat;
+  background-repeat: no-repeat;
+  /* background-repeat: repeat-x;
+  background-repeat: repeat-y;
+  background-repeat: space;
+  background-repeat: round; */
+  background-size: cover;
+  background-position: center;
+  /* background-position: left;
+  background-position: right;
+  background-position: bottom;
+  background-position: top;
+  /* x and y axis */
+  /* background-position: 0 50%; */
+  background-attachment: fixed;
+  /* background-attachment: scroll; */
+}
+
+/* This just shows it used images from a folder */
+.folder-img {
+  background: linear-gradient(rgba(61, 158, 255, 0.7), rgba(255, 255, 255, 0.3)),
+    url('../images/mushishi3.jpg') center/cover no-repeat fixed;
+
+  /* dont flip position/size repeat and attachment are ok  */
+}
+
+.colorzilla {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b3a5ef+1,1070e5+100 */
+  background: #b3a5ef; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #b3a5ef 1%,
+    #1070e5 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #b3a5ef 1%,
+    #1070e5 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #b3a5ef 1%,
+    #1070e5 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3a5ef', endColorstr='#1070e5',GradientType=0 ); /* IE6-9 */
+}

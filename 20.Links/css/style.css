@@ -1,0 +1,28 @@
+/* link -unvisited links with href */
+/* :visited - visited links */
+/* :hover - hover */
+/* :active - as the user clicks */
+/* a all links */
+
+a {
+  display: block;
+  background: paleturquoise;
+  margin: 1rem;
+}
+a:link {
+  color: peachpuff;
+}
+
+a:visited {
+  color: green;
+}
+
+a:active {
+  color: aqua;
+}
+
+/* :root - root element of the document, higher specificity
+which is html element
+for general styles
+css variables
+*/

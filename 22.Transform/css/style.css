@@ -1,0 +1,32 @@
+/* 
+transform : translate(), rotate(), scale(), skew()
+pick whhich function you wanna use
+*/
+
+/* translate, translate element over x or y */
+/* scale, increase size of elemnt whether x or y */
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+.one {
+  background: dodgerblue;
+  /* transform: translateX(30%); */
+  /* transform: scaleX(2); */
+  transform: skewX(40deg);
+}
+.two {
+  background: cornflowerblue;
+  /* transform: translateY(30%); */
+  /* transform: scaleY(2); */
+  /* transform: rotate(130deg); */
+  transform: skewY(40deg);
+}
+.three {
+  background: blueviolet;
+  /* transform: translate(200px, 300px); */
+  /* transform: scale(2); */
+  /* transform: rotateX(50deg); */
+  transform: skew(40deg, 80deg);
+}

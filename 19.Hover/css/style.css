@@ -1,0 +1,78 @@
+/* Basic Selectors */
+/* Pseudo Class Selectors */
+/* Pseudo Element Selectors */
+/* There are many more selectors in css
+ */
+
+* {
+  color: royalblue;
+}
+
+#heading {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: dodgerblue;
+}
+
+.heading {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: saddlebrown;
+}
+
+p {
+  letter-spacing: 5px;
+}
+
+/* Descendant and Child Selectors */
+
+.header h1 {
+  color: cadetblue;
+}
+.header > h1 {
+  color: mediumslateblue;
+}
+div h1 {
+  color: blueviolet;
+}
+
+div > h1 {
+  /* not only descendant but direct children */
+  color: blue;
+}
+
+/* ::first line ::first-letter */
+
+p::first-line {
+  font-weight: bold;
+}
+
+p::first-letter {
+  font-size: 150%;
+}
+
+/* Pseudo classes, specifies a special state */
+/* :hover */
+/* can be used on any element */
+
+div:hover {
+  color: green;
+}
+
+.headerhov:hover {
+  color: bisque;
+  background: blue;
+  letter-spacing: 5px;
+}
+
+a:hover {
+  text-decoration: none;
+  font-size: 20px;
+  background: palegoldenrod;
+}
+
+/* link -unvisited links with href */
+/* :visited - visited links */
+/* :hover - hover */
+/* :active - as the user clicks */
+/* a all links */

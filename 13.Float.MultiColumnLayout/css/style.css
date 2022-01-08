@@ -1,0 +1,36 @@
+/*
+float 
+position
+media-queries
+z-index
+::before ::after pseudo elements
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  height: 200px;
+  width: 50%;
+  float: right;
+}
+/* Multi-column layout */
+.one {
+  background: dodgerblue;
+}
+.two {
+  background: crimson;
+}
+.three {
+  background: forestgreen;
+}
+/* .four {
+  background: coral;
+} */
+
+h1 {
+  clear: both;
+}

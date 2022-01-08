@@ -1,0 +1,43 @@
+/* INHERITANCE child element inherit styles from parent unless the child has its own style?*/
+
+/* body is parent */
+/* body {
+  color: darkolivegreen;
+  font-family: monospace;
+  line-height: 1.5;
+  font-size: 20px;
+  border: 30px solid blue;
+}
+/* special is child, it nhas its own style */
+/* .special {
+  color: aqua;
+}
+div {
+  color: brown;
+} */
+
+/* Last Rule and Specificity * Universal Selector */
+/* 
+.special {
+  color: cornflowerblue;
+} */
+/* class has more specificity than elements */
+/* p {
+  color: aquamarine;
+}
+p {
+  color: brown;
+   /*this one overrides
+} */
+/* 
+#heading {
+  color: brown;
+}
+/* ID is higher than css */
+/* .heading {
+  color: blueviolet;
+} */
+* {
+  color: darkblue;
+}
+/* universal selector has the elast amount of specificity */
